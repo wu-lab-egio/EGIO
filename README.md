@@ -42,19 +42,35 @@ To be noted, the header is required in the file.
     ./_run_egio.sh -s species1 -S species2 -r species1.gtf -R species2.gtf -e species1_mRNA.fa -E species2_mRNA.fa -o species1_CDS.fa -O species2_CDS.fa -h homogene.txt -p 6 -i 0.8 -c 0.8 -m 2 -n -2 -g -1
 
 explaination:
+
 -s: name of species1, to be noted, the name should be consistent with the header of files containing pre-defined orthologous gene pairs, eg: hsa (required)
+
 -S: name of species2, to be noted, the name should be consistent with the header of files containing pre-defined orthologous gene pairs, eg: ptr (required)
+
 -r: gtf file of species1 (required)
+
 -R: gtf file of species2 (required)
+
 -e: cDNA fasta file of species1 (required)
+
 -E: cDNA fasta file of species2 (required)
+
 -o: CDS fasta file of species1 (required)
+
 -O: CDS fasta file of species2 (required)
+
 -h: orthologous/homologous gene pair containing file (required)
 
+
 -p: multiple processing to run EGIO (optional, default is 1)
+
 -i: identity threshold to detect orthologous exons during dynamic programming (optional, default is 0.8)
+
 -c: coverage threshold to detect orthologous exons during dynamic programming (optional, default is 0.8)
+
 -m: match score during dynamic programming (optional, default is 2)
+
 -n: mismatch penalty during dynamic programming (optional, default is -2)
+
 -g: gap penalty during dynamic programming (optional, default is -1)
+
