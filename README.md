@@ -38,8 +38,12 @@ To be noted, the header is required in the file.
   
   
 ## Usage
-    cd EGIO-main
-    ./_run_egio.sh -s species1 -S species2 -r species1.gtf -R species2.gtf -e species1_mRNA.fa -E species2_mRNA.fa -o species1_CDS.fa -O species2_CDS.fa -h homogene.txt -p 6 -i 0.8 -c 0.8 -m 2 -n -2 -g -1
+To test EGIO, please download example files in https://github.com/EGIO1/EGIO_example_source, and unzip gtf files. Put these files in folder "example", and put the "example" folder into "EGIO-main", then type following commands in Ternimal:
+
+
+    cd /path/to/EGIO-main
+    ./_run_egio.sh -s hsa -S ptr -r example/hsa.gtf -R example/ptr.gtf -e example/hsa_mRNA_example.fa -E example/ptr_mRNA_example.fa -o example/hsa_CDS_example.fa -O example/ptr_CDS_example.fa -h example/homogene.txt -p 6 -i 0.8 -c 0.8 -m 2 -n -2 -g -1
+
 
 explaination:
 
