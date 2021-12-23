@@ -1,8 +1,8 @@
-## EGIO
+# EGIO
 
 EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous isoforms) is aimed to detect orthologous exons and isoforms within pre-defined orthologous gene pairs. 
 
-## requirement
+# Requirement
 (1) EGIO required python packages pandas and numpy, to install pandas and numpy in terminal
 
     pip install pandas
@@ -37,7 +37,7 @@ To be noted, the header is required in the file.
   reference transcriptome gtf files
   
   
-## Usage
+# Usage
 To test EGIO, please download example files in https://github.com/EGIO1/EGIO_example_source, and unzip gtf files. Put these files in folder "example", and put the "example" folder into "EGIO-main", then type following commands in Ternimal:
 
 
@@ -45,7 +45,7 @@ To test EGIO, please download example files in https://github.com/EGIO1/EGIO_exa
     ./_run_egio.sh -s hsa -S ptr -r example/hsa.gtf -R example/ptr.gtf -e example/hsa_mRNA_example.fa -E example/ptr_mRNA_example.fa -o example/hsa_CDS_example.fa -O example/ptr_CDS_example.fa -h example/homogene.txt -p 6 -i 0.8 -c 0.8 -m 2 -n -2 -g -1
 
 
-explaination:
+Explaination:
 
 -s: name of species1, to be noted, the name should be consistent with the header of files containing pre-defined orthologous gene pairs, eg: hsa (required)
 
@@ -79,11 +79,11 @@ explaination:
 -g: gap penalty during dynamic programming (optional, default is -1)
 
 
-## Description of EGIO results
+# Description of EGIO results
 
 Two files will be generated after running EGIO: ExonGroup.txt and OrthoIso.txt.
 
-# Explaination of ExonGroup.txt headers:
+## Explaination of ExonGroup.txt headers:
 
 Group: exon group number
 
@@ -100,7 +100,7 @@ Iden: identity of unique exon region in two species of a exon group
 Type: type of exon group.
 
 
-# Explaination of OrthoIso.txt headers:
+## Explaination of OrthoIso.txt headers:
 
 species1: gene id of species1
 
