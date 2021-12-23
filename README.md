@@ -6,6 +6,7 @@ EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous i
 (1) EGIO required python packages pandas and numpy, to install pandas and numpy in terminal
 
   pip install pandas
+  
   pip install pandas
 
 
