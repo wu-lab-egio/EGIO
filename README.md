@@ -18,7 +18,7 @@ EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous i
   
     ENSG00000183091	ENSPTRG00000012536
   
-  ...
+    ... 
 
   
 (3) a tab seperated file containind pre-defined orthologous gene pairs, which could be prepared according to Inparanoid: https://inparanoid.sbc.su.se/cgi-bin/index.cgi. The gene id is Uniprot ID, which can be transformed to Ensembl Gene ID using gene annotations in Ensembl BioMart.
