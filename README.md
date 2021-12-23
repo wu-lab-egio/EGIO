@@ -51,7 +51,7 @@ For macOS, it might also notice that it it not permitted to run ___pairwisealign
     
     chmod 777 ___pairwisealign.so
 
-In addition, please go to Security & Privacy setting to allow runnin ___pairwisealign.so.
+In addition, please go to Security & Privacy setting to allow running ___pairwisealign.so.
 
 ## Parameters:
 
