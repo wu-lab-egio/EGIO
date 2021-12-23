@@ -75,3 +75,4 @@ explaination:
 -g: gap penalty during dynamic programming (optional, default is -1)
 
 
+## more detailed description of EGIO is listed in manual.pdf
