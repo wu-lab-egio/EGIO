@@ -74,3 +74,4 @@ explaination:
 
 -g: gap penalty during dynamic programming (optional, default is -1)
 
+
