@@ -8,6 +8,7 @@ EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous i
   pip install pandas
   pip install pandas
 
+
 (2) To increase the accuracy, the algorithm uses a BLASTN guided model, so a reciprocal BLASTN of exons is required. To run recipral BLASTN, BLAST+ is required before running EGIO, which could be found in https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/. An example is listed here:
 
     hsa	ptr
@@ -20,9 +21,11 @@ EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous i
   
     ... 
 
-#To be noted, the header is required in the file.
-  
+To be noted, the header is required in the file.
+ 
+
 (3) a tab seperated file containind pre-defined orthologous gene pairs, which could be prepared according to Inparanoid: https://inparanoid.sbc.su.se/cgi-bin/index.cgi. The gene id is Uniprot ID, which can be transformed to Ensembl Gene ID using gene annotations in Ensembl BioMart.
+
 
 (4) reference files, which can be downloaded from Ensembl (http://asia.ensembl.org/info/data/ftp/index.html):
   cDNA fasta files,
