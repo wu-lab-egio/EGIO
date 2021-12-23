@@ -53,7 +53,7 @@ For macOS, it might also notice that it it not permitted to run ___pairwisealign
 
 In addition, please go to Security & Privacy setting
 
-Explaination:
+## Parameters:
 
 -s: name of species1, to be noted, the name should be consistent with the header of files containing pre-defined orthologous gene pairs, eg: hsa (required)
 
