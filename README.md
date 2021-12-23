@@ -79,7 +79,7 @@ explaination:
 -g: gap penalty during dynamic programming (optional, default is -1)
 
 
-##Description of EGIO results
+## Description of EGIO results
 
 Two files will be generated after running EGIO: ExonGroup.txt and OrthoIso.txt.
 
@@ -97,4 +97,17 @@ species2Pos: unique exon region of a exon group in species2
 
 Iden: identity of unique exon region in two species of a exon group
 
-Type: e
+Type: type of exon group.
+
+
+OrthoIso.txt. contains orthologous isoforms of each orthologous gene pair. Explaination of headers:
+
+species1: gene id of species1
+
+species2: gene id of species1
+
+species1iso: isoform of species1
+
+species2iso: isoform of species2
+
+exoniden: identity of corresponding exons
