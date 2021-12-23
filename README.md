@@ -83,7 +83,7 @@ explaination:
 
 Two files will be generated after running EGIO: ExonGroup.txt and OrthoIso.txt.
 
-ExonGroup.txt contains exon groups of each orthologous gene pair. Explaination of headers:
+# Explaination of ExonGroup.txt headers:
 
 Group: exon group number
 
@@ -100,7 +100,7 @@ Iden: identity of unique exon region in two species of a exon group
 Type: type of exon group.
 
 
-OrthoIso.txt. contains orthologous isoforms of each orthologous gene pair. Explaination of headers:
+# Explaination of OrthoIso.txt headers:
 
 species1: gene id of species1
 
