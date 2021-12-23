@@ -177,7 +177,7 @@ def prepare_geio_extra(gtf, cdna, cds, species, outpath):
     orfpos = []
     for i in range(0,len(tran_name_cds)):
         orfforstart = cdnaDt[tran_name_cds[i]].find(cdsDt[tran_name_cds[i]][0:(len(cdsDt[tran_name_cds[i]])//3)])
-        orfrevstart = cdsDt[tran_name_cds[i]].find(cdnaDt[tran_name_cds[i]][0:(len(cdnaDt[tran_name_cds[i]])//3)])
+        orfrevstart = cdsDt[tran_name_cds[i]].find(cdnaDt[tran_name_cds[i]][0:(len(cdsDt[tran_name_cds[i]])//3)])
         orfstart = orfforstart+1 if orfforstart >= 0 else orfrevstart*-1
         orfend = orfstart + len(cdsDt[tran_name_cds[i]])-1 if orfforstart >= 0 else orfrevstart*-1+len(cdsDt[tran_name_cds[i]])
         orfpos.append([orfstart,orfend])
