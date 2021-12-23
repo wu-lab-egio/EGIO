@@ -1,6 +1,6 @@
 # EGIO
 
-EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous isoforms) is aimed to detect orthologous exons and isoforms within pre-defined orthologous gene pairs. 
+EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous isoforms) is aimed to detect orthologous exons and isoforms within pre-defined orthologous gene pairs. EGIO uses a dynamic programming strategy to do isoform alignment, with a reciprocal BLASTN result to guide the whole process.
 
 # Requirement
 (1) EGIO required python packages pandas and numpy, to install pandas and numpy in terminal
