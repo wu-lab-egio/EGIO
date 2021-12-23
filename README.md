@@ -7,7 +7,7 @@ EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous i
 
     pip install pandas
   
-    pip install pandas
+    pip install numpy
 
 
 (2) To increase the accuracy, the algorithm uses a BLASTN guided model, so a reciprocal BLASTN of exons is required. To run recipral BLASTN, BLAST+ is required before running EGIO, which could be found in https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/. An example is listed here:
@@ -75,4 +75,4 @@ explaination:
 -g: gap penalty during dynamic programming (optional, default is -1)
 
 
-## more detailed description of EGIO is listed in manual.pdf
+more detailed description of EGIO can be found in manual.pdf
