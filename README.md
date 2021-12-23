@@ -29,8 +29,11 @@ To be noted, the header is required in the file.
 
 
 (4) reference files, which can be downloaded from Ensembl (http://asia.ensembl.org/info/data/ftp/index.html):
+
   cDNA fasta files,
+  
   CDS fasta files,
+  
   reference transcriptome gtf files
   
   
