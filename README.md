@@ -10,14 +10,13 @@ EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous i
     pip install numpy
 
 
-(2) To increase the accuracy, the algorithm uses a BLASTN guided model, so a reciprocal BLASTN of exons is required. To run reciprocal BLASTN, BLAST+ is required before running EGIO, which could be found in https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/.
+(2) To increase the accuracy, the algorithm uses a BLASTN guided model, so a reciprocal BLASTN of exons is required. To run reciprocal BLASTN, BLAST+ is required before running EGIO, which could be found in https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/. For linux, it is easy to install BLAST+ using:
+
+    sudo apt-get install ncbi-blast+
 
 
+(3) a tab seperated file containing pre-defined orthologous gene pairs, which could be prepared according to Inparanoid: https://inparanoid.sbc.su.se/cgi-bin/index.cgi. The gene id provided by Inparanoid is Uniprot ID, which can be transformed to Ensembl Gene ID using gene annotations in Ensembl BioMart. An example is listed here:
 
-To be noted, the header is required in the file.
- 
-
-(3) a tab seperated file containind pre-defined orthologous gene pairs, which could be prepared according to Inparanoid: https://inparanoid.sbc.su.se/cgi-bin/index.cgi. The gene id is Uniprot ID, which can be transformed to Ensembl Gene ID using gene annotations in Ensembl BioMart. An example is listed here:
     hsa	ptr
   
     ENSG00000131018	ENSPTRG00000018717
@@ -27,6 +26,9 @@ To be noted, the header is required in the file.
     ENSG00000183091	ENSPTRG00000012536
   
     ... 
+
+To be noted, the header is required in the file.
+
 
 (4) reference files, which can be downloaded from Ensembl (http://asia.ensembl.org/info/data/ftp/index.html):
 
@@ -38,7 +40,7 @@ To be noted, the header is required in the file.
   
   
 # Usage
-To test EGIO, please download example files in https://github.com/EGIO1/EGIO_example_source, and unzip gtf files. Put these files in folder "example", and put the "example" folder into "EGIO-main". When running EGIO, it may notice that it it not permitted to run _Run_egio.sh. 
+To test EGIO, please download example files in https://github.com/EGIO1/EGIO_example_source, and unzip gtf files. Put these files in folder "example", and put the "example" folder into "EGIO-main". When running EGIO, it may notice that it it not permitted to run _Run_egio.sh, and it can be solved by chmod command.
 
 To run EGIO, type following commands in Ternimal:
 
@@ -47,11 +49,11 @@ To run EGIO, type following commands in Ternimal:
     chmod 777 _Run_egio.sh
     ./_RUN_egio.sh -s hsa -S ptr -r example/hsa.gtf -R example/ptr.gtf -e example/hsa_mRNA_example.fa -E example/ptr_mRNA_example.fa -o example/hsa_CDS_example.fa -O example/ptr_CDS_example.fa -h example/homogene.txt -p 6 -i 0.8 -c 0.8 -m 2 -n -2 -g -1
 
-For macOS, it might also notice that it it not permitted to run ___pairwisealign.so, which can be solved by:
+For macOS, it might also notice that it it not permitted to run ___pairwisealign_macos.so, which can be solved by:
     
-    chmod 777 ___pairwisealign.so
+    chmod 777 ___pairwisealign_macos.so
 
-In addition, please go to Security & Privacy setting to allow running ___pairwisealign.so.
+In addition, please go to Security & Privacy setting to allow running ___pairwisealign_macos.so.
 
 ## Parameters:
 
