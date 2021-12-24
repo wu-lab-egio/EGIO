@@ -15,7 +15,7 @@ EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous i
     sudo apt-get install ncbi-blast+
 
 
-(3) a tab seperated file containing pre-defined orthologous gene pairs, which could be prepared according to Inparanoid: https://inparanoid.sbc.su.se/cgi-bin/index.cgi. The gene id provided by Inparanoid is Uniprot ID, which can be transformed to Ensembl Gene ID using gene annotations in Ensembl BioMart. An example is listed here:
+(3) A tab seperated file containing pre-defined orthologous gene pairs, which could be prepared according to Inparanoid: https://inparanoid.sbc.su.se/cgi-bin/index.cgi. The gene id provided by Inparanoid is Uniprot ID, which can be transformed to Ensembl Gene ID using gene annotations in Ensembl BioMart. An example is listed here:
 
     hsa	ptr
   
@@ -30,7 +30,7 @@ EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous i
 To be noted, the header is required in the file.
 
 
-(4) reference files, which can be downloaded from Ensembl (http://asia.ensembl.org/info/data/ftp/index.html):
+(4) Reference files, which can be downloaded from Ensembl (http://asia.ensembl.org/info/data/ftp/index.html):
 
   cDNA fasta files,
   
