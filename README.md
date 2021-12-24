@@ -1,6 +1,8 @@
 # Introduction
 
-EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous isoforms) is aimed to detect orthologous exons and isoforms within pre-defined orthologous gene pairs. EGIO uses a dynamic programming strategy to do isoform alignment, in which  reciprocal BLASTN results are used to guide the whole process.
+EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous isoforms) is aimed to detect orthologous exons and isoforms within pre-defined orthologous gene pairs. EGIO uses a dynamic programming strategy to do isoform alignment, in which  reciprocal BLASTN results are used to guide the whole process. 
+
+The scripts have been tested on MacOS (X64) and Linux.
 
 # Requirement
 (1) EGIO required python packages pandas and numpy, to install pandas and numpy:
@@ -46,7 +48,7 @@ To run EGIO, type following commands in Ternimal:
 
 
     cd /path/to/EGIO-main
-    chmod 777 _Run_egio.sh
+    chmod 777 _RUN_egio.sh
     ./_RUN_egio.sh -s hsa -S ptr -r example/hsa.gtf -R example/ptr.gtf -e example/hsa_mRNA_example.fa -E example/ptr_mRNA_example.fa -o example/hsa_CDS_example.fa -O example/ptr_CDS_example.fa -h example/homogene.txt -p 6 -i 0.8 -c 0.8 -m 2 -n -2 -g -1
 
 For macOS, it might also notice that it it not permitted to run ___pairwisealign_macos.so, which can be solved by:
