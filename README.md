@@ -40,7 +40,7 @@ To be noted, the header is required in the file.
   
   
 # Usage
-To test EGIO, please download example files in https://github.com/EGIO1/EGIO_example_source, and unzip gtf files. Put these files in folder "example", and put the "example" folder into "EGIO-main". When running EGIO, it may notice that it it not permitted to run _Run_egio.sh, and it can be solved by chmod command.
+To test EGIO, please download example files in https://github.com/wu-lab-egio/EGIO_example_source, and unzip gtf files. Put these files in folder "example", and put the "example" folder into "EGIO-main". When running EGIO, it may notice that it it not permitted to run _Run_egio.sh, and it can be solved by chmod command.
 
 To run EGIO, type following commands in Ternimal:
 
