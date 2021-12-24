@@ -3,14 +3,14 @@
 EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous isoforms) is aimed to detect orthologous exons and isoforms within pre-defined orthologous gene pairs. EGIO uses a dynamic programming strategy to do isoform alignment, in which  reciprocal BLASTN results are used to guide the whole process.
 
 # Requirement
-(1) EGIO required python packages pandas and numpy, to install pandas and numpy in terminal
+(1) EGIO required python packages pandas and numpy, to install pandas and numpy:
 
     pip install pandas
   
     pip install numpy
 
 
-(2) To increase the accuracy, the algorithm uses a BLASTN guided model, so a reciprocal BLASTN of exons is required. To run reciprocal BLASTN, BLAST+ is required before running EGIO, which could be found in https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/. For linux, it is easy to install BLAST+ using:
+(2) To increase the accuracy, the algorithm uses a BLASTN guided model, so a reciprocal BLASTN of exons is used. To run reciprocal BLASTN, BLAST+ is required before running EGIO, which could be downloaded at https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/. For linux, it is easy to install BLAST+ using:
 
     sudo apt-get install ncbi-blast+
 
