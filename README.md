@@ -42,7 +42,7 @@ To be noted, the header is required in the file.
   
   
 # Usage
-To test EGIO, please download example files in https://github.com/wu-lab-egio/EGIO_example_source, and unzip gtf files. Put these files in folder "example", and put the "example" folder into "EGIO-main". When running EGIO, it may notice that it it not permitted to run _Run_egio.sh, and it can be solved by chmod command.
+To test EGIO, please download example files in https://github.com/wu-lab-egio/EGIO_example_source, and unzip gtf files. Put these files in folder "example", and put the "example" folder into "EGIO-main". When running EGIO, it may notice that it is not permitted to run _Run_egio.sh, and it can be solved by chmod command.
 
 To run EGIO, type following commands in Ternimal:
 
@@ -51,11 +51,7 @@ To run EGIO, type following commands in Ternimal:
     chmod 777 _RUN_egio.sh
     ./_RUN_egio.sh -s hsa -S ptr -r example/hsa.gtf -R example/ptr.gtf -e example/hsa_mRNA_example.fa -E example/ptr_mRNA_example.fa -o example/hsa_CDS_example.fa -O example/ptr_CDS_example.fa -h example/homogene.txt -p 6 -i 0.8 -c 0.8 -m 2 -n -2 -g -1
 
-For macOS, it might also notice that it it not permitted to run ___pairwisealign_macos.so, which can be solved by:
-    
-    chmod 777 ___pairwisealign_macos.so
-
-In addition, please go to Security & Privacy setting to allow running ___pairwisealign_macos.so.
+In addition, for macOS, please go to Security & Privacy setting to allow running ___pairwisealign_macos.so.
 
 ## Parameters:
 
