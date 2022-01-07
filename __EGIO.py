@@ -2218,7 +2218,7 @@ if __name__ == '__main__':
         help = 'gapscore score of dynamic programming')
     parser.add_argument('--minexon',
         nargs = '?',
-        default = 2,
+        default = 0,
         type = int,
         help = 'exons less than minexon size to be optimised after dynamic programming')
 
