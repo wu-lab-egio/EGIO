@@ -1491,49 +1491,6 @@ def colinearity_test(homopair):
       
     return passhomo2
 
-def colinearity_testold(homopair):
-    if len(homopair) == 0:
-        passhomo2 =  {"dat":[],"coln":["hsag","ptrg"]}
-    else:
-        homogdict = {"dat":unique(homopair),"coln":["hsag","ptrg"]}
-        homogdict = listsort(homogdict,by=["hsag","ptrg"],increase=True)
-        ##--------------- find the start group --------------
-        ##===========================================
-        minttg = homogdict["dat"][0][1]
-        minhsg = homogdict["dat"][0][0]
-        passhomo = {"dat":[[minhsg,minttg]],"coln":["hsag","ptrg"]}
-        ##-- find the hsa group that need to be optimised ---
-        unighs = unique(selectele(selectcol(homogdict,"hsag"),listwhich(selectcol(homogdict,"hsag"),">",minhsg)))
-        for i in range(0,len(unighs)):
-            ptrgtmp = selectele(selectcol(homogdict,"ptrg"),listwhich(selectcol(homogdict,"hsag"),"==",unighs[i]))
-            #minttg = max(selectele(selectcol(homogdict,"ptrg"),listwhich(selectcol(homogdict,"hsag"),"==",unighs[i])))
-            maxttgminus = max(selectele(selectcol(passhomo,"ptrg"),listwhich(selectcol(passhomo,"hsag"),"<",unighs[i])))
-            ptrtari = listwhich(ptrgtmp,">",maxttgminus)
-            if len(ptrtari) > 0:
-                passhomo["dat"].append([unighs[i],ptrgtmp[min(ptrtari)]])
-
-        ##===========================================
-        minttg = min(selectcol(homogdict,"ptrg"))
-        minhsg = min(selectele(selectcol(homogdict,"hsag"),listwhich(selectcol(homogdict,"ptrg"),"==",minttg)))
-        passhomo1 = {"dat":[[minhsg,minttg]],"coln":["hsag","ptrg"]}
-        ##-- find the hsa group that need to be optimised ---
-        unighs = unique(selectele(selectcol(homogdict,"hsag"),listwhich(selectcol(homogdict,"hsag"),">",minhsg)))
-        for i in range(0,len(unighs)):
-            ptrgtmp = selectele(selectcol(homogdict,"ptrg"),listwhich(selectcol(homogdict,"hsag"),"==",unighs[i]))
-            #minttg = max(selectele(selectcol(homogdict,"ptrg"),listwhich(selectcol(homogdict,"hsag"),"==",unighs[i])))
-            maxttgminus = max(selectele(selectcol(passhomo1,"ptrg"),listwhich(selectcol(passhomo1,"hsag"),"<",unighs[i])))
-            ptrtari = listwhich(ptrgtmp,">",maxttgminus)
-            if len(ptrtari) > 0:
-                passhomo1["dat"].append([unighs[i],ptrgtmp[min(ptrtari)]])   
-
-        if len(passhomo1["dat"]) > len(passhomo["dat"]):
-            passhomo2 = passhomo1
-        else:
-            passhomo2 = passhomo
-    ##===========================================
-      
-    return passhomo2
-
 def mergehomogroup(homog1,homog2):
     if len(homog1["dat"]) == 0 and len(homog2["dat"]) == 0:
         homogrptmp = {"dat":[],"coln":["hsag","ptrg"]}
