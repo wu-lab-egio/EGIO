@@ -2254,8 +2254,8 @@ if __name__ == '__main__':
     p.close()
     p.join()
 
-    exoniden = [["Group",'hsaEnsemblG',"hsaPos","ptrEnsemblG",'ptrPos','Iden',"Type"]]
-    isoiden = [["hsa","ptr","isohsa","isoptr","exoniden"]]
+    exoniden = [['Group',str(args.species1)+'EnsemblG',str(args.species1)+'Pos',str(args.species2)+'EnsemblG',str(args.species2)+'Pos','Iden','Type']]
+    isoiden = [[str(args.species1),str(args.species2),'iso'+str(args.species1),'iso'+str(args.species2),'exoniden']]
     for res in res_l:
         datatmp = res.get()
         exoniden = exoniden + datatmp["oe"]["dat"]
@@ -2266,16 +2266,4 @@ if __name__ == '__main__':
 
     exonidendf.to_csv(os.getcwd()+'/ExonGroup_testpro_'+str(args.species1)+'_'+str(args.species2)+'.txt', sep='\t', header=False, index=False)
     isoidendf.to_csv(os.getcwd()+'/OrthoIso_testpro_'+str(args.species1)+'_'+str(args.species2)+'.txt', sep='\t', header=False, index=False)
-
-
-##****************************************************************************************************************************##
-
-
-
-
-    #runEGIO(args.orthog, args.blastn, args.species1, args.species2, args.isocom1, args.cdscom1, args.isocom2, args.cdscom2, args.identhres,args.coverthres, args.match, args.mismatch, args.gap, args.minexon, args.pnum)
-
-# cd /Users/jeffma/MJFPhD/HsSpDB/step0_GEIO_script/test/
-# python __EGIO.py --orthog homolog_gene.dat --blastn blastn_hsa_ptr.dat --species1 hsa --species2 ptr --isocom1 mysql_traninfo_hsa.tab --cdscom1 mysql_exon_hsa.tab --isocom2 mysql_traninfo_ptr.tab --cdscom2 mysql_exon_ptr.tab
-
-#python __EGIO.py --orthog homolog_gene.dat --blastn blastn_mapping.tab --species1 hsa --species2 ptr --isocom1 hsa.tran --cdscom1 hsa.exon --isocom2 ptr.tran --cdscom2 ptr.exon --identhres 0.8 --coverthres 0.8 --match 2 --mismatch -2 --gap -1
+    
