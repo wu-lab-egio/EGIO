@@ -203,30 +203,3 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     summaryblastn(args.species1, args.blast1, args.exonanno1, args.species2, args.blast2, args.exonanno2, args.orthogen, args.coverage)
-
-
-#blast1 = "/Users/jeffma/MJFPhD/HsSpDB/step5_db_for_Diamond/2blastn/ptr_hsa.blast"
-#exonanno1 = "/Users/jeffma/MJFPhD/HsSpDB/step5_db_for_Diamond/0hsa/mysql_exon_seqinfo.tab"
-
-#blast2 = "/Users/jeffma/MJFPhD/HsSpDB/step5_db_for_Diamond/2blastn/hsa_ptr.blast"
-#exonanno2 = "/Users/jeffma/MJFPhD/HsSpDB/step5_db_for_Diamond/0ptr/mysql_exon_seqinfo.tab"
-
-#orthogen = "/Users/jeffma/MJFPhD/HsSpDB/step6_homologs/2homologs_gene_blastp_inparanoid8.dat"
-
-#coverage = 0.8
-#outpath =  "/Users/jeffma/MJFPhD/HsSpDB/step0_GEIO_script/test/"
-#summaryblastn(blast1, exonanno1, blast2, exonanno2, orthogen, coverage, outpath)
-
-#cd /Users/jeffma/MJFPhD/HsSpDB/step0_GEIO_script/test/
-#blast1 = "/Users/jeffma/MJFPhD/HsSpDB/step5_db_for_Diamond/2blastn/ptr_hsa.blast"
-#exonanno1 = "/Users/jeffma/MJFPhD/HsSpDB/step5_db_for_Diamond/0hsa/mysql_exon_seqinfo.tab"
-
-#blast2 = "/Users/jeffma/MJFPhD/HsSpDB/step5_db_for_Diamond/2blastn/hsa_ptr.blast"
-#exonanno2 = "/Users/jeffma/MJFPhD/HsSpDB/step5_db_for_Diamond/0ptr/mysql_exon_seqinfo.tab"
-
-#orthogen = "/Users/jeffma/MJFPhD/HsSpDB/step6_homologs/2homologs_gene_blastp_inparanoid8.dat"
-
-
-#outpath =  "/Users/jeffma/MJFPhD/HsSpDB/step0_GEIO_script/test/"
-#cd /Users/jeffma/MJFPhD/HsSpDB/step0_GEIO_script/test/
-#python __prepare_egio_blastn.py --species1 hsa --blast1 hsa-ptr --exonanno1 hsa.exon --species2 ptr --blast2 ptr-hsa --exonanno2 ptr.exon --orthogen homolog_gene.dat --coverage 0.8
