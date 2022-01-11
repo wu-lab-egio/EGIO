@@ -57,9 +57,9 @@ It will take about five hours to complete the comparison of human and chimpanzee
 
 ## Parameters:
 
--s: name of species1, to be noted, the name should be consistent with the header of files containing pre-defined orthologous gene pairs, eg: hsa (required)
+-s: name of species1, to be noted, the name should be consistent with the header of the file containing pre-defined orthologous gene pairs, eg: hsa (required)
 
--S: name of species2, to be noted, the name should be consistent with the header of files containing pre-defined orthologous gene pairs, eg: ptr (required)
+-S: name of species2, to be noted, the name should be consistent with the header of the file containing pre-defined orthologous gene pairs, eg: ptr (required)
 
 -r: gtf file of species1 (required)
 
