@@ -53,6 +53,8 @@ To run EGIO, type following commands in Ternimal:
 
 In addition, for macOS, please go to Security & Privacy setting to allow running ___pairwisealign_macos.so.
 
+It will take about five hours to complete the comparison of human and chimpanzee using 6 cores (MacOS, 2.4 GHz, 16 RAM).
+
 ## Parameters:
 
 -s: name of species1, to be noted, the name should be consistent with the header of files containing pre-defined orthologous gene pairs, eg: hsa (required)
