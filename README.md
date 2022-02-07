@@ -14,7 +14,7 @@ The scripts have been tested on MacOS (X64) and Ubuntu (Linux).
 
 (2) To increase the accuracy, the algorithm uses a BLASTN guided model, so a reciprocal BLASTN of exons is used. To run reciprocal BLASTN, BLAST+ is required before running EGIO, which could be downloaded at https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/. For linux, it is easy to install BLAST+ using:
 
-    sudo apt-get install ncbi-blast+
+    apt-get install ncbi-blast+
 
 
 (3) A tab seperated file containing pre-defined orthologous gene pairs, which could be prepared according to Inparanoid: https://inparanoid.sbc.su.se/cgi-bin/index.cgi. The gene id provided by Inparanoid is Uniprot ID, which can be transformed to Ensembl Gene ID using gene annotations in Ensembl BioMart. An example is listed here:
