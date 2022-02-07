@@ -2,7 +2,7 @@
 
 EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous isoforms) is aimed to detect orthologous exons and isoforms within pre-defined orthologous gene pairs. EGIO uses a dynamic programming strategy to do isoform alignment, in which  reciprocal BLASTN results are used to guide the whole process. 
 
-The scripts have been tested on MacOS (X64) and Ubuntu (Linux).
+The scripts have been tested on MacOS (X64) and Ubuntu (Linux). For those who find problems in running ___pairwisealign_linux.so, a ___pairwisealign.c file is provided to compile into ___pairwisealign_linux.so
 
 # Requirement
 (1) EGIO required python packages pandas and numpy, to install pandas and numpy:
