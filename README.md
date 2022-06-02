@@ -53,7 +53,7 @@ To run EGIO, type following commands in Ternimal:
 
 In addition, for macOS, please go to Security & Privacy setting to allow running ___pairwisealign_macos.so.
 
-It will take about five hours to complete the comparison of human and chimpanzee using 6 cores (MacOS, 2.4 GHz, 16 RAM).
+It will take about 1.5 hours to complete the comparison of human and chimpanzee using 6 cores (MacOS, 2.4 GHz, 16 RAM).
 
 ## Parameters:
 
@@ -121,3 +121,6 @@ species1iso: isoform of species1
 species2iso: isoform of species2
 
 exoniden: identity of corresponding exons
+
+## Update on June 2nd, 2022
+Increase the running speed. From ~5 hours to ~ 1.5 hours to finish the comparison between human and chimpanzee transcriptome
