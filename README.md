@@ -122,5 +122,6 @@ species2iso: isoform of species2
 
 exoniden: identity of corresponding exons
 
-## Update on June 2nd, 2022
+## Update notes
+June 2nd, 2022
 Increase the running speed. From ~5 hours to ~ 1.5 hours to finish the comparison between human and chimpanzee transcriptome
