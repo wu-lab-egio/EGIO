@@ -5,10 +5,6 @@
 # 2. python packages: pandas, numpy
 
 
-# cd /Users/jeffma/MJFPhD/HsSpDB/step0_GEIO_script/EGIO/
-# ./_run_egio.sh -s hsa -S ptr -r hsa.gtf -R ptr.gtf -e hsa_mRNA.fa -E ptr_mRNA.fa -o hsa_CDS.fa -O ptr_CDS.fa -h homogene.txt -p 6 -i 0.8 -c 0.8 -m 2 -n -2 -g -1
-
-
 while getopts ":s:S:r:R:e:E:o:O:h:i:c:m:n:g:p:" opt; do
   case $opt in
     s) species1="$OPTARG"
