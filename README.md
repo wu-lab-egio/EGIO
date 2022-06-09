@@ -36,7 +36,7 @@ The scripts have been tested on MacOS (X64) and Ubuntu (Linux).
 To be noted, the header is required in the file.
 
 
-(4) Reference files, which can be downloaded from Ensembl (http://asia.ensembl.org/info/data/ftp/index.html):
+(4) Required files, which can be downloaded from Ensembl (http://asia.ensembl.org/info/data/ftp/index.html):
 
   cDNA fasta files,
   
