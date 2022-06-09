@@ -7,6 +7,8 @@ The scripts have been tested on MacOS (X64) and Ubuntu (Linux).
 # Requirement
 (1) gcc
     
+    gcc is required to compile ___pairwisealign.c
+    
 (2) EGIO required python packages pandas and numpy, to install pandas and numpy:
 
     pip install pandas
