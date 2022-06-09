@@ -5,19 +5,21 @@ EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous i
 The scripts have been tested on MacOS (X64) and Ubuntu (Linux). For those who find problems in running ___pairwisealign_linux.so on other systems, a ___pairwisealign.c file is provided to compile into ___pairwisealign_linux.so
 
 # Requirement
-(1) EGIO required python packages pandas and numpy, to install pandas and numpy:
+(1) gcc
+    
+(2) EGIO required python packages pandas and numpy, to install pandas and numpy:
 
     pip install pandas
   
     pip install numpy
 
 
-(2) To increase the accuracy, the algorithm uses a BLASTN guided model, so a reciprocal BLASTN of exons is used. To run reciprocal BLASTN, BLAST+ is required before running EGIO, which could be downloaded at https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/. For linux, it is easy to install BLAST+ using:
+(3) To increase the accuracy, the algorithm uses a BLASTN guided model, so a reciprocal BLASTN of exons is used. To run reciprocal BLASTN, BLAST+ is required before running EGIO, which could be downloaded at https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/. For linux, it is easy to install BLAST+ using:
 
     apt-get install ncbi-blast+
 
 
-(3) A tab seperated file containing pre-defined orthologous gene pairs, which could be prepared according to Inparanoid: https://inparanoid.sbc.su.se/cgi-bin/index.cgi. The gene id provided by Inparanoid is Uniprot ID, which can be transformed to Ensembl Gene ID using gene annotations in Ensembl BioMart. An example is listed here:
+(4) A tab seperated file containing pre-defined orthologous gene pairs, which could be prepared according to Inparanoid: https://inparanoid.sbc.su.se/cgi-bin/index.cgi. The gene id provided by Inparanoid is Uniprot ID, which can be transformed to Ensembl Gene ID using gene annotations in Ensembl BioMart. An example is listed here:
 
     hsa	ptr
   
@@ -51,7 +53,6 @@ To run EGIO, type following commands in Ternimal:
     chmod 777 _RUN_egio.sh
     ./_RUN_egio.sh -s hsa -S ptr -r example/hsa.gtf -R example/ptr.gtf -e example/hsa_mRNA_example.fa -E example/ptr_mRNA_example.fa -o example/hsa_CDS_example.fa -O example/ptr_CDS_example.fa -h example/homogene.txt -p 6 -i 0.8 -c 0.8 -m 2 -n -2 -g -1
 
-In addition, for macOS, please go to Security & Privacy setting to allow running ___pairwisealign_macos.so.
 
 It will take about 1.5 hours to complete the comparison of human and chimpanzee using 6 cores (MacOS, 2.4 GHz, 16 RAM).
 
