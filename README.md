@@ -64,17 +64,17 @@ It will take about 1.5 hours to complete the comparison of human and chimpanzee 
 
 -S: name of species2, to be noted, the name should be consistent with the header of the file containing pre-defined orthologous gene pairs, eg: ptr (required)
 
--r: gtf file of species1 (required)
+-r: gtf file of species1, reference transcriptome (required)
 
--R: gtf file of species2 (required)
+-R: gtf file of species2, reference transcriptome (required)
 
--e: cDNA fasta file of species1 (required)
+-e: cDNA fasta file of species1, sequence of total exons (required)
 
--E: cDNA fasta file of species2 (required)
+-E: cDNA fasta file of species2, sequence of total exons (required)
 
--o: CDS fasta file of species1 (required)
+-o: CDS fasta file of species1, sequence of orf (required)
 
--O: CDS fasta file of species2 (required)
+-O: CDS fasta file of species2, sequence of orf (required)
 
 -h: orthologous/homologous gene pair containing file (required)
 
