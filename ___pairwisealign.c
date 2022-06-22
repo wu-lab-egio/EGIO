@@ -31,7 +31,7 @@ char* pairwisealign(char sequence1[], char sequence2[],char method[], int gap)
         outputSW(seq1, seq2, gap);
     }
     else if(strcmp(mtd,"glocal")==0 | strcmp(mtd,"gl")==0){
-        scoresMatSW(seq1, seq2, normol, gap);
+        scoresMatNW(seq1, seq2, normol, gap);
         outputNW(seq1, seq2, gap);
     }
     else{
