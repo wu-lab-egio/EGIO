@@ -960,7 +960,7 @@ def alignmentexon(regr, regt, identhres=0.8, coverthres=0.8, microexon=10, score
                 ttgi = listwhich(selectcol(regt,"group"),"==",ttg)[0]
                 ttseqtmp = ttseqtmp + selectcol(regt,"seq")[ttgi]
             ##------------------
-            wholealign = pairwisealign(hsseqtmp,ttseqtmp,method="glocal")
+            wholealign = pairwisealign(hsseqtmp,ttseqtmp,method="global")
             scorewtest = scorealignment(wholealign["seq1"],wholealign["seq2"])                    
             ##---------------------------##
             scorelmax = []
@@ -972,7 +972,7 @@ def alignmentexon(regr, regt, identhres=0.8, coverthres=0.8, microexon=10, score
                     ttgi = listwhich(selectcol(regt,"group"),"==",ttg)[0]
                     ttseqtmp = selectcol(regt,"seq")[ttgi]
                     grptmp.append([[hsg],[ttg]])
-                    localalign = pairwisealign(hsseqtmp,ttseqtmp,method="glocal")
+                    localalign = pairwisealign(hsseqtmp,ttseqtmp,method="global")
                     scoreltest = scorealignment(localalign["seq1"],localalign["seq2"])                                     
                     scorelmax.append(scoreltest)
                 
