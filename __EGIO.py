@@ -28,7 +28,7 @@ def pairwisealign(seqref,seqtst,method):
     if method == "global":
         gapopen = -10
     elif method == "glocal":
-        gapopen = -3
+        gapopen = -10
     elif method == "local":
         gapopen = -10
     ##=====================================##
