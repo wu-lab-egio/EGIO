@@ -123,7 +123,7 @@ species1iso: isoform of species1
 
 species2iso: isoform of species2
 
-exoniden: identity of corresponding exons
+exoniden: identity of corresponding exons. The exon IDs can be found in corresponding species.exon file, which is one of the EGIO output in the "extrainfo" folder in the work directory.
 
 ## Update notes
 June 6th, 2022
