@@ -21,7 +21,7 @@ The scripts have been tested on MacOS (X64) and Ubuntu (Linux).
     apt-get install ncbi-blast+
 
 
-(4) A tab seperated file containing pre-defined orthologous gene pairs, which could be prepared according to Inparanoid: https://inparanoid.sbc.su.se/cgi-bin/index.cgi. The gene id provided by Inparanoid is Uniprot ID, which can be transformed to Ensembl Gene ID using gene annotations in Ensembl BioMart. To be noted, the gene ID should be in your transcriptome; otherwise, it will raise a "KeyError", because some genes might be removed from the new annotations. An example is listed here:
+(4) A tab seperated file containing pre-defined orthologous gene pairs, which could be prepared according to Inparanoid: https://inparanoid.sbc.su.se/cgi-bin/index.cgi. The gene id provided by Inparanoid is Uniprot ID, which can be transformed to Ensembl Gene ID using gene annotations in Ensembl BioMart. An example is listed here:
 
     hsa	ptr
   
