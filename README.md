@@ -58,6 +58,7 @@ To run EGIO, type following commands in Ternimal:
 
 It will take about 1.5 hours to complete the comparison of human and chimpanzee using 6 cores (MacOS, 2.4 GHz, 16 RAM).
 
+
 To visualize isoforms of two orthologous genes:
 
     command: python __plotIsoCom.py --speciespair species1-species2 --orthologpair gene_of_species1-gene_of_species2 --outpath /path/to/store/plot
