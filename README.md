@@ -61,7 +61,11 @@ It will take about 1.5 hours to complete the comparison of human and chimpanzee 
 
 
 ## Visualization
-To visualize isoforms of two orthologous genes:
+plotnine package is required to visualize isoforms of two orthologous genes:
+
+    pip install plotnine
+
+Visualization:
 
     python __plotIsoCom.py --speciespair species1-species2 --orthologpair gene_of_species1-gene_of_species2 --outpath /path/to/store/plot
     
