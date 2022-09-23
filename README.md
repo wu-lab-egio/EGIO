@@ -8,7 +8,7 @@
 ### June 6th, 2022
 
 Increase the running speed.
-
+# 
 # Introduction
 
 EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous isoforms) is aimed to detect orthologous exons and isoforms within pre-defined orthologous gene pairs. EGIO uses a dynamic programming strategy to do isoform alignment, in which  reciprocal BLASTN results are used to guide the whole process. 
