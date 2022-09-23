@@ -46,6 +46,7 @@ To be noted, the header is required in the file.
   
   
 # Usage
+##Run EGIO
 To test EGIO, please download example files in https://github.com/wu-lab-egio/EGIO_example_source, and unzip gtf files. Put these files in folder "example", and put the "example" folder into "EGIO-main". When running EGIO, it may notice that it is not permitted to run _Run_egio.sh, and it can be solved by chmod command.
 
 To run EGIO, type following commands in Ternimal:
@@ -59,7 +60,7 @@ To run EGIO, type following commands in Ternimal:
 It will take about 1.5 hours to complete the comparison of human and chimpanzee using 6 cores (MacOS, 2.4 GHz, 16 RAM).
 
 
-To visualize isoforms of two orthologous genes:
+##To visualize isoforms of two orthologous genes:
 
     python __plotIsoCom.py --speciespair species1-species2 --orthologpair gene_of_species1-gene_of_species2 --outpath /path/to/store/plot
     
