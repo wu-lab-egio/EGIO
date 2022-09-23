@@ -129,7 +129,9 @@ exoniden: identity of corresponding exons. The exon IDs can be found in correspo
 September 23rd, 2022
 
 (1) optimize some functions;
+
 (2) add a visualization tool to plot EGI and isoforms of two species.
+
 
 
 June 6th, 2022
