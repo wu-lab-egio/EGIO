@@ -1,3 +1,14 @@
+# Update notes
+### September 23rd, 2022
+
+(1) optimize some functions;
+
+(2) add a visualization tool to plot EGI and isoforms of two species.
+
+### June 6th, 2022
+
+Increase the running speed.
+
 # Introduction
 
 EGIO (Exon Group Ideogram based detection of Orthologous exons and Orthologous isoforms) is aimed to detect orthologous exons and isoforms within pre-defined orthologous gene pairs. EGIO uses a dynamic programming strategy to do isoform alignment, in which  reciprocal BLASTN results are used to guide the whole process. 
@@ -146,15 +157,4 @@ species2iso: isoform of species2
 
 exoniden: identity of corresponding exons. The exon IDs can be found in corresponding species.exon file, which is one of the EGIO output in the "extrainfo" folder in the work directory.
 
-## Update notes
-### September 23rd, 2022
 
-(1) optimize some functions;
-
-(2) add a visualization tool to plot EGI and isoforms of two species.
-
-
-
-### June 6th, 2022
-
-Increase the running speed.
