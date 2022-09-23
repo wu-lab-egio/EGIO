@@ -61,7 +61,7 @@ It will take about 1.5 hours to complete the comparison of human and chimpanzee 
 
 To visualize isoforms of two orthologous genes:
 
-    command: python __plotIsoCom.py --speciespair species1-species2 --orthologpair gene_of_species1-gene_of_species2 --outpath /path/to/store/plot
+    python __plotIsoCom.py --speciespair species1-species2 --orthologpair gene_of_species1-gene_of_species2 --outpath /path/to/store/plot
     
 For example, to visualize ENSG00000197969-ENSPTRG00000021041 of human and chimpanzee:
     
