@@ -367,7 +367,7 @@ def prepare_geio_extra(gtf, cdna, cds, species):
         
         uftmp = []
         for iso in ugiso:
-            if iso in orfDt:
+            if iso in orfDt and orfDt[iso] != '.|.':
                 uftmp = uftmp + extract_CDS(ug,cdnaDt[iso],orfDt[iso],excoDt[iso],genechrDt[ug],genestrDt[ug])
         
         CDSinfotmp = dropduplicated(uftmp)
