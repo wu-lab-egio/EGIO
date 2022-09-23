@@ -43,7 +43,11 @@ To be noted, the header is required in the file.
   CDS fasta files,
   
   reference transcriptome gtf files
-  
+ 
+(5) plotnine package is required, if you want to visuzalize isoforms of two orthologous genes
+
+    pip install plotnine
+ 
   
 # Usage
 ## Run EGIO
