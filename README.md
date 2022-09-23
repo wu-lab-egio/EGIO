@@ -1,4 +1,4 @@
-# Update notes
+## Update notes
 ### September 23rd, 2022
 
 (1) optimize some functions;
