@@ -77,7 +77,7 @@ For example, to visualize ENSG00000197969-ENSPTRG00000021041 of human and chimpa
     
     python __plotIsoCom.py --speciespair hsa-ptr --orthologpair ENSG00000197969-ENSPTRG00000021041
 
-If outpath is not given, the plot will be in your word direction.
+If '--outpath' is not given, the plot will be in your word direction.
 
 ## Parameters:
 
