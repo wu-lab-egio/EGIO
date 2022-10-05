@@ -1957,11 +1957,11 @@ if __name__ == '__main__':
         gen2 = list(orthogene[args.species2])[gi]
 
         if not(gen1 in isodict1):
-            print("Error in analyais of " + gen1 + ": "+ gen1 + " is not recorded in the transcriptome")
+            print("Error in analyais of " + gen1 + ": "+ gen1 + " is not recorded in the transcriptome or it is no longer a protein coding gene")
             continue
         
         if not(gen2 in isodict2):
-            print("Error in analyais of " + gen1 + ": "+ gen2 + " is not recorded in the transcriptome")
+            print("Error in analyais of " + gen1 + ": "+ gen2 + " is not recorded in the transcriptome or it is no longer a protein coding gene")
             continue
 
         if not(gen1 in bedict):
