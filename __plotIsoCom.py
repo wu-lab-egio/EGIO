@@ -345,7 +345,7 @@ def testquery(speciespair, orthologpair, wdpath):
     ##===============================================
     tranidx1 = tranfile1[tranfile1.EnsemblG == gene1].index.tolist()
     if len(tranidx1) == 0:
-        raise SyntaxError(gene1 + " is not recorded in the transcriptome")
+        raise SyntaxError(gene1 + " is not recorded in the transcriptome or it is no longer a protein coding gene")
 
     tranidx2 = tranfile2[tranfile2.EnsemblG == gene2].index.tolist()
     if len(tranidx2) == 0:
