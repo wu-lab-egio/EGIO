@@ -157,4 +157,5 @@ species2iso: isoform of species2
 
 exoniden: identity of corresponding exons. The exon IDs can be found in corresponding species.exon file, which is one of the EGIO output in the "extrainfo" folder in the work directory.
 
-
+## Reference:
+Ma J, Wu JY, Zhu L. Detection of orthologous exons and isoforms using EGIO. Bioinformatics. 2022 10;38(19):4474-4480. 
