@@ -1,4 +1,8 @@
 ## Update notes
+### December 18th, 2022
+
+Fix bugs
+
 ### September 23rd, 2022
 
 (1) optimize some functions;
