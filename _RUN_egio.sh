@@ -185,10 +185,6 @@ fi
 if [ ! -f "extrainfo/blastn_mapping_$species1-$species2.tab" ]; then
 echo "summarize reciprocal blastN"
 python __prepare_egio_blastn.py --species1 $species1 --blast1 extrainfo/$species1-$species2 --exonanno1 extrainfo/$species1.exon --species2 $species2 --blast2 extrainfo/$species2-$species1  --exonanno2 extrainfo/$species2.exon --orthogen $ortholog
-rm extrainfo/$species1.exonfasta
-rm extrainfo/$species2.exonfasta
-rm extrainfo/$species1-$species2
-rm extrainfo/$species2-$species1
 fi
 
 ###=======================================
