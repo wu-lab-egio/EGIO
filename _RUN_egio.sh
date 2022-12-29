@@ -46,15 +46,15 @@ done
 if [ ! -z "${species1}" ];then
   echo "species1 is $species1"
 else
-  echo "species1 is not set, which will be set as egiospe1"; 
-  species1=egiospe1
+  echo "species1 is not set"; 
+  exit 1
 fi
 
 if [ ! -z "${species2}" ];then
   echo "species2 is $species2"
 else
-  echo "species2 is not set, which will be set as egiospe2"; 
-  species2=egiospe2
+  echo "species2 is not set"; 
+  exit 1
 fi
 
 if [ -z "${GTFreference1}" ];then
