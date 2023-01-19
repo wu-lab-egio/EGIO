@@ -86,13 +86,7 @@ plotnine package is required to visualize isoforms of two orthologous genes:
 
 Visualization:
 
-    python __plotIsoCom.py --speciespair species1-species2 --orthologpair gene_of_species1-gene_of_species2 --outpath /path/to/store/plot
-    
-For example, to visualize ENSG00000197969-ENSPTRG00000021041 of human and chimpanzee:
-    
-    python __plotIsoCom.py --speciespair hsa-ptr --orthologpair ENSG00000197969-ENSPTRG00000021041
-
-If '--outpath' is not given, the plot will be in your work direction.
+    python __plotIsoCom.py --speciespair species1-species2 --orthologpair gene_of_species1-gene_of_species2 --feature cds_or_exon --extrapath /path/to/extrainfo/folder --egpath /path/to/EGfile --outpath /path/to/store/plot
 
 ## Parameters:
 
